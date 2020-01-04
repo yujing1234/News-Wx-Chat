@@ -1,0 +1,28 @@
+/* pages/index/index.wxss */
+.header{
+  white-space: nowrap;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+/* 导入模板wxss */
+
+.header view{
+  /* float: left; */
+  display: inline-block;
+  margin: 0 10rpx;
+}
+.active{
+  font-size: 36rpx;
+  font-weight: bold;
+
+}
+.banner{
+  height: 400rpx;
+}
+.banner image{
+  width: 100%;
+}
+@import '../../templates/newsList/newsList.wxss';
+.list{
+  margin-top: 30rpx;
+}

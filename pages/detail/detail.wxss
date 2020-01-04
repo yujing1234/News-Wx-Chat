@@ -1,0 +1,27 @@
+/* pages/detail/detail.wxss */
+.title{
+  font-size: 40rpx;
+  font-weight: bold;
+  padding:20rpx;
+}
+.subTitle{
+height: 80rpx;
+}
+.xing{
+  float: right;
+  padding-right: 20rpx;
+}
+.xing image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.time{
+  font-size: 30rpx;
+  color:#999;
+}
+.content{
+  text-indent: 2em;
+  line-height: 40rpx;
+  padding: 20rpx;
+  text-align: justify;
+}

@@ -1,0 +1,14 @@
+<!-- 定义模板 -->
+<template name='newsList'>
+  <view class="newsList">
+      <view class="text">
+        <view class='title'>{{title}}</view>
+        <view>{{time}}</view>
+      </view>
+      <view class="img">
+        <image src='{{imgUrl}}'></image>
+      </view>
+  </view>
+
+</template>
+

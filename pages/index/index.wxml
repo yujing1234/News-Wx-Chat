@@ -1,0 +1,36 @@
+<!--pages/index/index.wxml-->
+<!-- 引入模板 -->
+<import src='../../templates/newsList/newsList.wxml' />
+<!-- 导航 -->
+<scroll-view scroll-x='true' class="header">
+  <!-- <view class="active">要闻</view> -->
+  <view wx:for='{{navBar}}' wx:key='index' bindtap='change' data-id='{{index}}' class="{{index==selected?'active':''}}">{{item}}</view>
+
+</scroll-view>
+
+<!-- 轮播 -->
+<swiper indicator-dots='true' class='banner'>
+  <swiper-item>
+    <image src='../../images/1.jpeg'></image>
+    <!-- <view>文字文字</view> -->
+  </swiper-item>
+  <swiper-item>
+    <image src='../../images/2.jpeg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='../../images/3.jpeg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='../../images/4.jpeg'></image>
+  </swiper-item>
+</swiper>
+
+<!-- 新闻列表信息展示 -->
+<view class='list'>
+  <view wx:for='{{list}}' wx:key='index' bindtap='tiao' data-mark='{{item.id}}'>
+    <!-- <template is='newsList' data='{{item}}'></template> -->
+    <!-- ... 展开运算符 -->
+    <template is='newsList' data='{{...item}}'></template>
+  </view>
+
+</view>

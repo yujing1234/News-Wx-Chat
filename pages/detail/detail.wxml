@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<!-- 标题 -->
+<view class='title'>{{dataList.title}}</view>
+<view class='subTitle'>
+<text class='time'>{{dataList.time}}</text>
+<!-- 图片 星星-->
+<view class='xing'>
+<!-- <image wx:if='{{isShow}}' src='../../images/star.png'></image>
+<image wx:else src='../../images/chat.png'></image> -->
+<image bindtap='change' src="{{isShow?'../../images/star.png':'../../images/chat.png'}}"></image>
+</view>
+
+</view>
+
+<view>
+<image src='{{dataList.imgUrl}}'></image>
+</view>
+<!-- 详情 -->
+<view class='content'>
+{{dataList.content}}
+</view>
